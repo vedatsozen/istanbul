@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT PRATİĞİ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="btns">
+<button onclick="changebg(1)">1</button>
+<button onclick="changebg(2)">2</button>
+<button onclick="changebg(3)">3</button>
+<button onclick="changebg(4)">4</button>
+</div>
+
+<div id="istanbul">
+    <h1 class="istanbul">ISTANBUL</h1>
+    <a class="istanbuldetay" href="https://goo.gl/maps/RgnwKPAYXuyyF2vUA" target="blank">Find in Google Maps</a>
+</div>
+
+<div id="background"></div>
+
+</body>
+
+<script>
+
+let background = document.getElementById("background");
+
+function changebg(photonumber) {
+
+
+        background.style.backgroundImage = "url('images/" + photonumber + ".jpg')";
+        background.style.backgroundSize = "100% 100%";
+        background.style.backgroundRepeat = "no-repeat";
+        background.style.transition = "300ms ease-in-out"
+    }
+
+
+
+</script>
+</html>
